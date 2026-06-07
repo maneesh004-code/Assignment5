@@ -1,0 +1,57 @@
+/* src/App.css */
+
+/* --------------------------------------------------------------
+   Global dark theme & typography
+   -------------------------------------------------------------- */
+:root {
+  --bg-primary: #0f172a;               /* deep dark background */
+  --bg-gradient: linear-gradient(135deg, #1e293b, #0f172a);
+  --accent: #3b82f6;                     /* vibrant blue accent */
+  --text-primary: #fafafa;               /* pure white */
+  --text-muted: #a1a1aa;                 /* soft gray */
+  --card-bg: rgba(255,255,255,0.07);     /* glass card base */
+  --card-blur: 12px;
+  --radius: 12px;
+  --transition: 0.3s ease;
+  --shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Body & root */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* App container */
+.app {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* --------------------------------------------------------------
+   Header (gradient background, centred title)
+   -------------------------------------------------------------- */
+.header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: var(--bg-gradient);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+.title {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.subtitle {
+  margin-top: 0.6rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+}
